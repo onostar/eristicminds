@@ -1,3 +1,7 @@
+*{
+	margin:0;
+	padding:0;
+}
 body{
 	margin:0;
 	padding:0;
@@ -65,7 +69,7 @@ main{
 #main{
 	position:absolute;
 	top:0;
-	left:15.5%;
+	left:15%;
 	width:70%;
 	padding:0;
 	margin:0;
@@ -74,7 +78,7 @@ main{
 	position:fixed;
 	top:0;
 	left:0;
-	margin:2px;
+	margin:0;
 	padding:0;
 }
 #advert2{
@@ -91,17 +95,14 @@ header{
 	width:100%;
 	margin:0;
 	padding:3px;
-	border-bottom:3px solid #101076;
 }
 .logo{
-	margin:1px;
+	margin:5px 0 0 0;
 	padding:0;
 	float:left;
 	width:8%;
 }
 .logo img{
-	margin:0;
-	pading:0;
 	width:100%;
 }
 .menu-icon{
@@ -117,8 +118,8 @@ h1{
 	font-family:cooper black;
 	float:left;
 	text-transform:lowercase;
-	margin:0 0 8px 0;
-	padding:2px;
+	margin:0;
+	padding:1px;
 }
 .tagline{
 	font-size:60%;
@@ -132,6 +133,7 @@ nav{
 	padding:0;
 	background-color:#E1E1EE;
 	border-bottom:3px solid #101076;
+	border-top:3px solid #101076;
 	width:100%;
 }
 nav ul{
@@ -153,8 +155,7 @@ nav li a{
 }
 nav li a:hover, .active a{
 	background-color:#101076;
-	color:#F4EB22;
-	
+	color:#F4EB22;	
 }
 #menu-icon{
 	display:none;
@@ -193,6 +194,7 @@ nav li a:hover, .active a{
 	height:80%;
 	margin:0;
 	padding:0;
+	display:block;
 }
 #slider figure figcaption{
 	display:block;
@@ -272,16 +274,24 @@ nav li a:hover, .active a{
 #head{
 	text-align:center;
 }
-#featuring h3 a{
+.more{
+	display:flex;
+	width:90%;
+	margin:0 auto;
+}
+.more h3{
+	width:32%;
+}
+.more h3 a{
 	padding:10px;
-	float:left;
-	width:30%;
-	margin:0 5px;
+	display:block;
+	margin:0 10px;
+	text-decoration:none;
 	background-color:#101076;
 	color:#F4EB22;
 	text-align:center;
 }
-#featuring h3 a:hover{
+.more h3 a:hover{
 	background-color:#000;
 	color:#F4EB22;
 }
@@ -363,24 +373,24 @@ h2{
 	margin-right:10px;
 }
 .advertisement{
+	display:flex;
 	width:100%;
-	margin:4px 0;
+	margin:4px auto;
 	padding:0;
 	border:1px solid #E1E1EE;
 	box-shadow: 3px 3px 3px #E1E1EE;
 }
 .advertisement p{
 	border: 2px solid #101076;
-	margin:0px 2px;
+	margin:0 2px;
 	height:100px;
 	text-align:center;
-	display:inline-block;
-	width:30%;
+	width:32%;
 	font-size:130%;
 }
 .disclaimer{
 	width:100%;
-	margin:4px 4px;
+	margin:0;
 	padding:0;
 	border:1px solid #E1E1EE;
 	box-shadow: 3px 3px 3px #E1E1EE;
@@ -401,15 +411,17 @@ footer{
 	margin:0;
 	padding:10px;
 	background:#E1E1EE;
-	width:100%;
+	display:flex;
+	justify-content:space-around;
 }
 .conect{
 	float:left;
 	margin:0;
 	text-align:center;
 }
+
 #bottomnav ul{
-	margin:3px 5px 0 0;
+	margin:0;
 	padding:0;
 }
 #bottomnav ul li{
@@ -439,21 +451,18 @@ footer{
 	padding:0;
 }
 #social{
-	width:30%;
 	margin:0;
 	padding:0;
 }
-#social img{
-	margin:0 2px;
-	width:11%;
-	padding:1px;
+#social a{
+	font-size:1.3em;
 }
 .Rights{
 	margin:0;
 	padding:1px;
 	text-align:center;
 	color:#F4EB22;
-	background:#000;
+	background:rgb(26, 25, 25);
 	border-top:1px solid #c4c4c4;
 	width:100%;
 }
@@ -464,7 +473,7 @@ footer{
 .Rights img{
 	margin:0;
 	padding:0;
-	width:2%;
+	width:15px;
 }
 .aboutbanner{
 	width:100%;
@@ -502,7 +511,7 @@ article{
 	font-weight:bold;
 }
 #postsbox{
-	widdth:100%;
+	width:100%;
 	margin:0;
 	padding:0;
 }
@@ -541,7 +550,7 @@ aside a{
 aside section{
 	margin:0;
 	padding:0;
-	align:center;
+	text-align:center;
 	width:100%;
 }
 .asidefig{
@@ -612,7 +621,7 @@ article p{
 .postadd{
 	display:none;
 }
-@media(max-width: 1020px){
+@media(max-width: 800px){
 	.sections{
 		float:none;
 		width:100%;
@@ -629,15 +638,21 @@ article p{
 		padding:1px;
 	}
 	header{
+		position:fixed;
+		top:0;
+		left:0;
+		background:rgba(255, 255, 255, 0.9);
 		width:100%;
 		margin:0;
 		padding:20px auto;
+		z-index:1;
+		border-bottom:2px solid #101076;
 	}
 	.logo{
 		float:left;
-		margin:0;
+		margin:5px 0 0 0;
 		padding:0;
-		width:20%;
+		width:10%;
 	}
 	.logo a{
 		margin:0;
@@ -650,19 +665,50 @@ article p{
 	}
 	h1{
 		float:left;
-		width:60%;
+		width:80%;
 		margin:0;
 		padding:0;
 		font-size:200%;
+		
 	}
 	.tagline{
 		position:absolute;
 		top:35px;
 	}
+	#menu-icon{
+		display:inline;
+		z-index:1;
+		float:right;
+		padding-right:10px;
+	}
+	#menu-icon a{
+		font-size:2.5em;
+	}
 	nav{
 		display:none;
+		z-index:1;
+		top:100%;
+		right:0;
+		border-radius:0 0 5px 5px;
+		opacity:0.95;
 	}
-	
+	nav ul{
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+	nav li{
+		display:block;
+		margin:0;
+		border-top:1px solid rgba(7, 12, 92, 0.2);
+	}
+	nav li a{
+		color:#101076;
+		display:block;
+	}
+	.banner{
+		margin-top:70px;
+	}
 	.banners{
 		float:none;
 		width:100%;
@@ -675,7 +721,7 @@ article p{
 	}
 	#slider figure figcaption{
 	font-size:100%;
-}
+	}
 	#trending{
 		width:100%;
 	}
@@ -698,7 +744,7 @@ article p{
 	.feat{
 		display:block;
 		width:90%;
-		heigth:auto;
+		height:auto;
 		margin:10px auto;
 	}
 	
@@ -708,7 +754,7 @@ article p{
 		margin-right:5px;
 	}
 	.feat h3{
-		heigth:auto;
+		height:auto;
 		text-align:left;
 		padding:5px;
 	}
@@ -720,20 +766,24 @@ article p{
 	.addbox img{
 		width:100%;
 	}
-	#featuring h3 a{
+	.more{
+		widows: 95%;
+		margin:0 auto;
+	}
+	.more h3 a{
 		padding:3px;
 		font-size:70%;
 		margin:1px;
 	}
 	.advertisement{
 		width:95%;
-		margin:4px 0;
+		margin:4px auto;
 		padding:0;
 		text-align:center;
 	}
-	.dissclaimer{
+	.disclaimer{
 		width:95%;
-		margin:4px 0;
+		margin:4px auto;
 		padding:0;
 		text-align:justify;
 	}
@@ -753,6 +803,7 @@ article p{
 	}
 	.connection{
 		text-align:center;
+		flex-direction: column;
 	}
 	.conect{
 		float:none;
@@ -802,11 +853,11 @@ article p{
 		padding:0;
 	}
 	.Rights img{
-		width:7%;
+		width:20px;
 	}
 	.whoWeAre{
 		width:95%;
-		margin:0 auto;
+		margin:70px auto;
 		padding:1px;
 	}
 	.aboutus{
@@ -822,7 +873,7 @@ article p{
 	}
 	.newsSection{
 		width:100%;
-		margin:0;
+		margin:70px 0 0 0;
 		padding:0;
 	}
 	.articles{
@@ -843,55 +894,19 @@ article p{
 		margin-bottom:30px;
 	}
 	#featuring{
-		margin-top:4px;
+		margin-top:70px;
 	}
 	.archives{
 		text-align:center;
-		margin:4px auto;
-		border:2px solid #101076;
+		margin:70px auto;
+		border:none;
 		padding:5px;
 		border-radius:10px;
 		font-size:110%;
 	}
-	#menu-icon{
-		display:inline;
-		width:10%;
-		position:fixed;
-		top:18px;
-		right:2px;
-		opacity:0.9;
-		z-index:1;
-		border-radius:5px;
-		padding:0;
-	}
-		#menu-icon img{
-		width:100%;
-	}
-		#menu-icon ul{
-		position:absolute;
-		top:0;
-		right:0;
-		background:#101076;
-		text-align:justify;
-		width:200px;
-		padding:0 0 0 4px;
-		border-radius:5px;
-	}
-		#menu-icon li{
-		list-style:none;
-		background:#101076;
-		padding:5px;
-		text-align:justify;
-		border:1px solid #000;
-		}
-		#menu-icon li a{
-		padding:8px 120px 8px 5px;
-		margin:0;
-		color:#F4EB22;
-		text-transform:uppercase;
-		}
-		.posts{
+	.posts{
 		padding:4px;
+		margin-top:70px;
 		}
 		.posts h3{
 		font-size:1.5em;

@@ -13,6 +13,8 @@
 	graphics, web">
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/png" href="images/eristics.png" sizes="32x32">
+	<link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css">
 	<script src="script.js"></script>
 	<script>
 		(adsbygoogle = window.adsbygoogle || []).push({
@@ -38,18 +40,21 @@
 		<header>
 			<div class="logo"><a href="index.html"><img src="images/eristics.png" alt="Eristic minds logo"></a></div>
 			<h1><a href="index.html">ERISTICMINDS<br><span class="tagline">The concerned minds</span></a></h1>
-			<div id="menu-icon"><a href="#" title="menu" onclick="displayMenu();"><img src="images/menuicon.png" alt="menu"></a></div>
+			<div id="menu-icon">
+				<a href="javascript:void(0);" title="menu" onclick="displayMenu();"><i class="fas fa-bars"></i></a>
+			</div>
 			<div class="clear"></div>
+			<nav id="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="news.html" title="latest Trends">News</a></li>
+					<li><a href="events.html" title="Happenings">Events</a></li>
+					<li><a href="gossip.html" title="Aproko news">Gossip</a></li>
+					<li><a href="archive.html" title="Posts">Archive</a></li>
+				</ul>
+			</nav>
 		</header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="news.html" title="latest Trends">News</a></li>
-				<li><a href="events.html" title="Happenings">Events</a></li>
-				<li><a href="gossip.html" title="Aproko news">Gossip</a></li>
-				<li><a href="archive.html" title="Posts">Archive</a></li>
-			</ul>
-		</nav>
+		
 		<section class="posts">
 			<h3>Celebrating The Saintcity Initiative</h3>
 			<p class="catposts"><span class="catpost">Category:</span> News</p>
@@ -115,14 +120,13 @@
 					<p>| info@eristicminds.org |</p>
 				</div>
 				<div class="conect" id="social">
-					<a href="http://facebook.com/eristicminds" title="Follow us on Facebook"><img src="images/facebook-1.png" alt="eristicminds facebook page"></a>
-					<a href="http://twitter.com/eristicminds" title="Connect with us on Twitter"><img src="images/twitter-1.png" alt="eristicminds twitter page"></a>
-					<a href="http://instagram.com/eristicminds" title="Follow our posts on Instagram"><img src="images/instagram-1.png" alt="eristicminds instagram page"></a>
+					<a href="http://facebook.com/eristicminds" title="Follow us on Facebook"><i class="fab fa-facebook" style="color:#3b5998;"></i></a>
+					<a href="http://twitter.com/eristicminds" title="Connect with us on Twitter"><i class="fab fa-twitter" style="color:#00acee;"></i></a>
+					<a href="http://instagram.com/eristicminds" title="Follow our posts on Instagram"><i class="fab fa-instagram" style="color:#943e24;"></i></a>
 				</div>
-				<div class="clear"></div>
 			</section>
 			<section class="Rights">
-				<p><img src="images/eristics.png" alt="Eristicminds"> Eristicminds 2018 &copy; All Rights reserved.</p>
+				<p><img src="images/eristics.png" alt="Eristicminds"> Eristicminds 2018 - 2020 &copy; All Rights reserved.</p>
 			</section>
 		</footer>
 	</div>
