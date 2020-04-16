@@ -248,10 +248,14 @@ nav li a:hover, .active a{
 	padding:2px;
 }
 #trending ul li a{
+	color:	rgba(7, 12, 92, 0.5)
+	font-weight:normal;
 	text-decoration:underline;
+	transition: 1s all;
 }
 #trending ul li a:hover{
 	font-weight:bold;
+	padding:3px;
 	color:#000;
 }
 #trending h3{
@@ -277,7 +281,7 @@ nav li a:hover, .active a{
 .more{
 	display:flex;
 	width:90%;
-	margin:0 auto;
+	margin:10px auto;
 }
 .more h3{
 	width:32%;
@@ -290,6 +294,7 @@ nav li a:hover, .active a{
 	background-color:#101076;
 	color:#F4EB22;
 	text-align:center;
+	text-decoration:none;
 }
 .more h3 a:hover{
 	background-color:#000;
@@ -646,7 +651,7 @@ article p{
 		margin:0;
 		padding:20px auto;
 		z-index:1;
-		border-bottom:2px solid #101076;
+		border-bottom:2px solid rgba(7, 11, 68, 0.2);
 	}
 	.logo{
 		float:left;
@@ -717,7 +722,7 @@ article p{
 		width:100%;
 	}
 	#slider figure{
-		height:250px;
+		height:350px;
 	}
 	#slider figure figcaption{
 	font-size:100%;
